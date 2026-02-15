@@ -1,22 +1,20 @@
-// action types
-export const SONRAKI_FILM = 'SONRAKI_FILM';
-export const ONCEKI_FILM = 'ONCEKI_FILM';
-export const LISTEYE_EKLE = 'LISTEYE_EKLE';
-export const LISTEDEN_CIKAR = 'LISTEDEN_CIKAR';
+export const NEXT_MOVIE = 'NEXT_MOVIE';
+export const PREV_MOVIE = 'PREV_MOVIE';
+export const ADD_MOVIE_TO_FAVS = 'ADD_MOVIE_TO_FAVS';
+export const REMOVE_MOVIE_FROM_FAVS = 'REMOVE_MOVIE_FROM_FAVS';
 
-// action creators
-export function sonrakiFilm() {
-  return { type: SONRAKI_FILM };
-}
+export const nextMovie = () => {
+  return { type: NEXT_MOVIE };
+};
 
-export function oncekiFilm() {
-  return { type: ONCEKI_FILM };
-}
+export const prevMovie = () => {
+  return { type: PREV_MOVIE };
+};
 
-export function listeyeEkle() {
-  return { type: LISTEYE_EKLE };
-}
+export const addMovieToFavs = () => {
+  return { type: ADD_MOVIE_TO_FAVS };
+};
 
-export function listedenCikar(id) {
-  return { type: LISTEDEN_CIKAR, payload: id };
-}
+export const removeMovieToFavs = (id) => {
+  return { type: REMOVE_MOVIE_FROM_FAVS, payload: id };
+};
